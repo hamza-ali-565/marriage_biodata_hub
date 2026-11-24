@@ -5,9 +5,9 @@ import { ChevronDown } from "lucide-react";
 
 import { SmartLink } from "../../components/SmartLink";
 export const metadata = {
-  title: "Jain Marriage Biodata — Format & Free Templates",
+  title: "Jain Marriage Biodata Format — Free Templates & Sample",
   description:
-    "Jain marriage biodata guide — Jai Jinendra opening, Digambar vs Shvetambara, dietary fields, Paryushan timing, and community-specific biodata formats. Free PDF download.",
+    "Jain marriage biodata format with a full sample — Jai Jinendra opening, Digambar vs Shvetambar sect, dietary fields and free PDF templates to download.",
   alternates: {
     canonical: "https://www.marriagebiodatahub.com/jain-biodata-for-marriage",
   },
@@ -61,6 +61,14 @@ const faqs = [
   {
     q: "Does a Jain marriage biodata include horoscope details?",
     a: "This depends on the family and community. Jain scripture and philosophy do not endorse astrology. However, many Jain families — particularly in Rajasthan and Gujarat — do include Rashi and Nakshatra in their biodata as a cultural practice. Whether to include horoscope fields is a personal and family decision. If your family checks these details before proceeding, include them. If your family does not prioritise horoscope matching, leave the section out. There is no religious requirement to include it in a Jain biodata.",
+  },
+  {
+    q: "What is the Jain marriage biodata format?",
+    a: "A Jain marriage biodata format follows a clean one-page layout opening with Jai Jinendra, followed by personal details (including Sect and Jain Gotra), dietary observance level, education and career, family details (including business background where relevant), About Me, partner preferences, and parent contact details.",
+  },
+  {
+    q: "Which fields are different in a Jain biodata?",
+    a: "Compared to a standard Indian biodata, a Jain biodata highlights three community-specific details: the Jai Jinendra opening invocation, Sect (Digambar or Shvetambara, plus sub-sect such as Murtipujak, Sthanakvasi, or Terapanthi), and dietary observance level (such as strict Jain vegetarian with no root vegetables and no eating after sunset), alongside Jain Gotra and family business background.",
   },
 ];
 

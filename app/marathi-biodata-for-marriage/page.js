@@ -5,9 +5,9 @@ import { ChevronDown } from "lucide-react";
 
 import { SmartLink } from "../../components/SmartLink";
 export const metadata = {
-  title: "Lagnacha Biodata | Marathi Marriage Biodata Guide",
+  title: "Marathi Lagna Biodata — लग्न बायोडाटा मराठी Format Guide",
   description:
-    "लग्नाचा बायोडाटा guide for Marathi families. Kul, Kulswamini, Gotra fields included. Free PDF download. For Maratha, Brahmin, CKP & all communities.",
+    "Marathi lagna biodata (लग्नाचा बायोडाटा) format guide with Kul, Kulswamini and Gotra fields, a full Marathi sample and free PDF download for all communities.",
   alternates: {
     canonical: "https://www.marriagebiodatahub.com/marathi-biodata-for-marriage",
   },
@@ -240,7 +240,7 @@ export default function MarathiBiodataForMarriage() {
 
           <div className="rounded-2xl border border-slate-700 bg-slate-900/40 p-6 mb-8 font-mono text-sm overflow-x-auto">
             <pre className="text-slate-300 whitespace-pre-wrap leading-loose">
-{`लग्नाचा बायोडाटा
+              {`लग्नाचा बायोडाटा
 ━━━━━━━━━━━━━━━━━━━━━━━
 वैयक्तिक माहिती / Personal Details
 ━━━━━━━━━━━━━━━━━━━━━━━
@@ -278,6 +278,17 @@ export default function MarathiBiodataForMarriage() {
 ━━━━━━━━━━━━━━━━━━━━━━━`}
             </pre>
           </div>
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-12 mb-4">Marathi Lagna Biodata — लग्न बायोडाटा मराठी</h2>
+          <p className="text-slate-300 leading-relaxed mb-8">
+            Creating a Marathi lagna biodata (लग्न बायोडाटा मराठी) takes just a few minutes when you already have your
+            personal, family, and horoscope details ready—including Kul, Kulswamini, Gotra, Rashi, and Nakshatra. Keep
+            all information concise on one A4 page so families can read it easily on WhatsApp, and choose our{" "}
+            <Link href="/templates/lagna-patrika" className="text-brand-400 underline hover:text-brand-300 transition-colors">
+              Lagna Patrika template
+            </Link>{" "}
+            for a traditional Marathi layout ready to download as a clean PDF.
+          </p>
 
           {/* CTA */}
           <div className="my-12 rounded-2xl border border-rose-500/20 bg-rose-500/5 p-8 text-center">

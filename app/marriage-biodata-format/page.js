@@ -364,6 +364,8 @@ export default function MarriageBiodataFormat() {
             <Link href="/muslim-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Muslim</Link>
             {" · "}
             <Link href="/marathi-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Marathi</Link>
+            {" · "}
+            <Link href="/jain-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Jain marriage biodata format</Link>
           </p>
 
           {/* Section 4 — PDF vs Word */}
@@ -520,6 +522,7 @@ export default function MarriageBiodataFormat() {
                 { href: "/what-is-marriage-biodata", label: "What is a marriage biodata?" },
                 { href: "/hindu-marriage-biodata", label: "Hindu marriage biodata" },
                 { href: "/muslim-biodata-for-marriage", label: "Muslim Rishta biodata" },
+                { href: "/jain-biodata-for-marriage", label: "Jain marriage biodata format" },
                 { href: "/about-me-for-marriage-biodata", label: "About Me examples" },
                 { href: "/templates", label: "All templates" },
               ].map(({ href, label }) => (

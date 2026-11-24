@@ -8,9 +8,9 @@ import { WaitlistForm } from "../../components/WaitlistForm";
 import { CopyPromptButton } from "../../components/CopyPromptButton";
 
 export const metadata = {
-  title: "AI Biodata Generator — Free Prompts & Coming Tool",
+  title: "Marriage Biodata Prompt for ChatGPT — Copy-Paste Prompts",
   description:
-    "Generate your marriage biodata About Me with AI. Free copy-paste ChatGPT prompts you can use today, plus our built-in AI generator launching soon.",
+    "Free marriage biodata prompt for ChatGPT with copy-paste prompts for boys, girls and parents. Write your biodata About Me in minutes — no login, no watermark.",
   alternates: {
     canonical: "https://www.marriagebiodatahub.com/ai-biodata-generator",
   },
@@ -39,6 +39,42 @@ export const metadata = {
   },
 };
 
+const BOY_PROMPT_TEXT = `Write a respectful, natural About Me section for a boy's Indian marriage biodata using ONLY the details below. Do not invent facts or use generic clichés like "simple, caring, and family-oriented."
+
+Name: [Full Name, e.g., Aarav Sharma]
+Age: [e.g., 28 years]
+Education: [e.g., B.Tech in Computer Science, Pune]
+Profession: [e.g., Senior Software Engineer in Bengaluru]
+Family background: [e.g., Father is a retired bank manager, mother is a homemaker, one married elder sister; close-knit family from Jaipur]
+Hobbies: [e.g., weekend trekking in the Sahyadris and playing badminton]
+Partner expectations: [e.g., an educated, grounded partner who values family warmth and mutual respect]
+
+Write in first person, 4 to 5 sentences, in a respectful tone suitable for Indian families. Output only the paragraph.`;
+
+const GIRL_PROMPT_TEXT = `Write a respectful, natural About Me section for a girl's Indian marriage biodata using ONLY the details below. Do not invent facts or use generic phrases like "simple and homely."
+
+Name: [Full Name, e.g., Ananya Nair]
+Age: [e.g., 26 years]
+Education: [e.g., Chartered Accountant (CA)]
+Profession: [e.g., Tax Consultant at an advisory firm in Mumbai]
+Family background: [e.g., Father runs a wholesale business in Kochi, mother is a school teacher, one younger brother studying engineering]
+Hobbies: [e.g., Carnatic vocal music and weekend baking]
+Partner expectations: [e.g., a kind, career-settled partner who respects both family traditions and personal aspirations]
+
+Write in first person, 4 to 5 sentences, in a respectful tone suitable for Indian families. Output only the paragraph.`;
+
+const PARENTS_PROMPT_TEXT = `Write a dignified, respectful About Me and Partner Expectations summary for our [son / daughter]'s Indian marriage biodata from a parent's perspective, using ONLY the facts below.
+
+Name: [Son/Daughter's Name, e.g., Rohan Verma / Meera Verma]
+Age: [e.g., 27 years]
+Education: [e.g., MBA in Finance, Delhi]
+Profession: [e.g., Product Manager in Gurugram]
+Family background: [e.g., Respectable family settled in Lucknow; father is a civil engineer, mother manages the home, one younger sibling]
+Hobbies: [e.g., classical tabla, reading Indian history, and morning running]
+Partner expectations: [e.g., a well-educated match from a warm, cultured family with shared values]
+
+Write in third person, 4 to 5 sentences, in a respectful tone suitable for Indian families. Avoid generic adjectives and do not add unstated details. Output only the paragraph.`;
+
 const PROMPT_TEXT = `Write the About Me section for my Indian marriage biodata. Use ONLY the facts below — do not add any details I haven't given you, and do not use generic adjectives like "simple," "family-oriented," "caring," or "fun-loving" without a specific fact backing them up.
 
 My profession/situation: [e.g., Software Engineer at a tech company in Bengaluru]
@@ -52,6 +88,16 @@ What I'm looking for in a partner: [e.g., someone who has her own ambitions and 
 Write this in first person, exactly 3 to 4 sentences, under 90 words total. No exclamation marks. Do not start with "I am a simple person" or any variation of that phrase. Output only the paragraph, nothing else.`;
 
 const faqs = [
+  {
+    q: "What is the best marriage biodata prompt for ChatGPT?",
+    a: "The best marriage biodata prompt for ChatGPT gives specific facts—your name placeholder, age, education, profession, family background, hobbies, and partner expectations—instead of asking it to invent your personality. Use the copy-paste prompts in the section above to get a natural, respectful draft without generic clichés.",
+  },
+  {
+    q: "Can ChatGPT write my complete marriage biodata?",
+    a: "ChatGPT can draft the About Me and partner preference text, but the final biodata format and design should be made with a proper biodata maker that includes community fields like Gotra, Rashi, or Sect and formats everything onto one clean page. Once your text is ready, use our free biodata maker at marriagebiodatahub.com to create and download your PDF.",
+    linkHref: "/#biodata-form-wrapper",
+    linkLabel: "Create your marriage biodata in our free maker →",
+  },
   {
     q: "Can I use AI to write my marriage biodata?",
     a: "Yes, AI tools like ChatGPT and Claude can help draft your About Me section, especially if you're stuck on where to start. The key is using AI as a first-draft assistant, not a final answer — AI-generated About Me text tends to default to the same generic phrases ('family-oriented, caring, simple') that this site's own guides specifically teach you to avoid. Use AI to get past a blank page, then edit the result to include specific, genuine facts about yourself rather than generic adjectives.",
@@ -144,6 +190,13 @@ function SectionFAQ({ items }) {
             </summary>
             <div className="px-5 md:px-6 pb-6 pt-0 text-slate-300 leading-relaxed text-sm lg:text-base">
               <p>{faq.a}</p>
+              {faq.linkHref && (
+                <p className="mt-2">
+                  <SmartLink href={faq.linkHref} className="text-brand-300 underline hover:text-brand-200">
+                    {faq.linkLabel}
+                  </SmartLink>
+                </p>
+              )}
             </div>
           </details>
         </article>
@@ -191,6 +244,37 @@ export default function AiBiodataGenerator() {
             text makes and how to fix them before you use it. Our own built-in AI generator — no copy-pasting
             required — is launching soon; join the waitlist below to get access first.
           </AEOBlock>
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-12 mb-4">Marriage Biodata Prompt for ChatGPT — Copy-Paste Prompts</h2>
+          <p className="text-slate-300 leading-relaxed mb-6">
+            Looking for a ready-to-use marriage biodata prompt for ChatGPT? Pick the biodata prompt for ChatGPT below
+            that matches who is creating the profile, replace the bracketed details with your real facts, and paste it
+            into ChatGPT for a warm, respectful ChatGPT biodata for marriage in seconds.
+          </p>
+
+          <h3 className="text-lg font-bold text-white mt-6 mb-3">1. ChatGPT prompt for a boy&apos;s biodata About Me</h3>
+          <div className="rounded-2xl border border-slate-700 bg-slate-900/60 p-6 mb-3">
+            <pre className="whitespace-pre-wrap text-sm text-slate-300 leading-relaxed font-mono">{BOY_PROMPT_TEXT}</pre>
+          </div>
+          <div className="flex justify-end mb-8">
+            <CopyPromptButton value={BOY_PROMPT_TEXT} />
+          </div>
+
+          <h3 className="text-lg font-bold text-white mt-6 mb-3">2. ChatGPT prompt for a girl&apos;s biodata About Me</h3>
+          <div className="rounded-2xl border border-slate-700 bg-slate-900/60 p-6 mb-3">
+            <pre className="whitespace-pre-wrap text-sm text-slate-300 leading-relaxed font-mono">{GIRL_PROMPT_TEXT}</pre>
+          </div>
+          <div className="flex justify-end mb-8">
+            <CopyPromptButton value={GIRL_PROMPT_TEXT} />
+          </div>
+
+          <h3 className="text-lg font-bold text-white mt-6 mb-3">3. ChatGPT prompt for parents writing a biodata for their son or daughter</h3>
+          <div className="rounded-2xl border border-slate-700 bg-slate-900/60 p-6 mb-3">
+            <pre className="whitespace-pre-wrap text-sm text-slate-300 leading-relaxed font-mono">{PARENTS_PROMPT_TEXT}</pre>
+          </div>
+          <div className="flex justify-end mb-8">
+            <CopyPromptButton value={PARENTS_PROMPT_TEXT} />
+          </div>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mt-12 mb-4">The prompt that actually works — copy and paste this</h2>
           <p className="text-slate-300 leading-relaxed mb-4">

@@ -5,9 +5,9 @@ import { ChevronDown } from "lucide-react";
 
 import { SmartLink } from "../../components/SmartLink";
 export const metadata = {
-  title: "Hobbies for Marriage Biodata — What to Write",
+  title: "Hobbies for Marriage Biodata for Girl & Boy — Examples",
   description:
-    "What hobbies to write in your marriage biodata — which ones work, which ones bore families, and 30 real examples across communities and professions. With Hindi translations.",
+    "Hobbies for marriage biodata with separate example lists for girls and boys — what to write, what to avoid, and 30 real examples with Hindi translations.",
   alternates: {
     canonical: "https://www.marriagebiodatahub.com/hobbies-for-marriage-biodata",
   },
@@ -125,6 +125,120 @@ const groups = [
       { label: "Chess", text: "Chess — I was ranked in my district under-18 category in school. I still play online most evenings and occasionally lose badly to someone half my age." },
       { label: "Sketching or painting", text: "Sketching — mostly portraits from memory, mostly people I find interesting. I've been doing it since school and I fill a notebook every three or four months." },
     ],
+  },
+];
+
+const girlHobbies = [
+  {
+    label: "Classical dance (Bharatanatyam / Kathak)",
+    text: "Bharatanatyam — I've been training for ten years and still perform at our cultural association's annual programme.",
+    note: "Shows long-term commitment and gives elders an easy conversation starter.",
+  },
+  {
+    label: "Carnatic or Hindustani vocal music",
+    text: "Hindustani classical singing — I do riyaaz three mornings a week with my guru over video call.",
+  },
+  {
+    label: "Weekend baking",
+    text: "Baking — I started making eggless cakes and breads during lockdown, and Sunday tea at home is now incomplete without one.",
+    note: "Warm, relatable, and specific without sounding like a cliché.",
+  },
+  {
+    label: "Distance running",
+    text: "Running — I run 5 km three mornings a week and completed my second half-marathon in Mumbai earlier this year.",
+  },
+  {
+    label: "Regional literature",
+    text: "Reading Marathi and Hindi short stories — I keep a small shelf of classics and swap books with my grandfather.",
+    note: "Replaces the generic 'reading' with a warm family detail.",
+  },
+  {
+    label: "Botanical sketching or watercolour painting",
+    text: "Watercolour painting — mostly landscapes from places I've travelled to, which now fill two sketchbooks.",
+  },
+  {
+    label: "Yoga and pranayama",
+    text: "Morning yoga — I practice Ashtanga yoga four days a week before work; it keeps my schedule grounded.",
+  },
+  {
+    label: "Regional home cooking",
+    text: "Cooking South Indian filter coffee and festival sweets — I'm slowly learning my grandmother's Mysuru pak recipe.",
+  },
+  {
+    label: "Volunteering / teaching",
+    text: "Teaching English to primary school students at an NGO every Saturday morning for the last two years.",
+    note: "Signals empathy and consistency through real action.",
+  },
+  {
+    label: "Balcony gardening",
+    text: "Terrace gardening — growing curry leaves, tulsi, hibiscus, and seasonal vegetables in pots at home.",
+  },
+  {
+    label: "Badminton",
+    text: "Badminton — I play doubles twice a week at our neighbourhood sports club after work.",
+  },
+  {
+    label: "Heritage & museum walks",
+    text: "Weekend heritage walks — exploring old quarters and stepwells whenever I visit a new Indian city.",
+  },
+  {
+    label: "Calligraphy or hand lettering",
+    text: "Hand lettering and journaling — I design handmade greeting cards for every family birthday and wedding.",
+  },
+];
+
+const boyHobbies = [
+  {
+    label: "Weekend cricket",
+    text: "Cricket — I play in a weekend corporate league and coach my younger cousins whenever I visit home.",
+  },
+  {
+    label: "Himalayan or Sahyadri trekking",
+    text: "Trekking — I've completed four treks across Uttarakhand and Himachal in the last three years.",
+  },
+  {
+    label: "Cooking a signature dish",
+    text: "Cooking — I make Sunday breakfast for the family and have spent the last year perfecting Hyderabadi vegetable biryani.",
+  },
+  {
+    label: "Cycling",
+    text: "Long-distance cycling — I ride 40 km with a weekend cycling group every Sunday morning before the city wakes up.",
+  },
+  {
+    label: "Tabla or guitar",
+    text: "Playing acoustic guitar — mostly old Hindi film melodies at family gatherings and weekend get-togethers.",
+  },
+  {
+    label: "History & biography reading",
+    text: "Reading non-fiction — mainly modern Indian history and biographies; currently reading about India's space programme.",
+  },
+  {
+    label: "Photography",
+    text: "Travel and candid family photography — I'm the unofficial photographer at every cousin's wedding and family trip.",
+  },
+  {
+    label: "Chess",
+    text: "Chess — played at the university level and still play rapid matches most evenings after work.",
+  },
+  {
+    label: "Road trips across India",
+    text: "Driving road trips — I've driven across five states with friends and family over the past three years.",
+  },
+  {
+    label: "Swimming & fitness",
+    text: "Swimming — four mornings a week at the local pool; it's my favourite way to disconnect from screens.",
+  },
+  {
+    label: "Personal finance & investing",
+    text: "Following Indian equity markets and personal finance — friends usually call me before picking their first mutual fund.",
+  },
+  {
+    label: "Mentoring students",
+    text: "Mentoring final-year college students from my hometown on resume reviews and interview prep on weekends.",
+  },
+  {
+    label: "Home gardening",
+    text: "Growing herbs and chillies on my apartment balcony — started with mint and now have twelve thriving pots.",
   },
 ];
 
@@ -324,6 +438,45 @@ export default function HobbiesForMarriageBiodata() {
                     );
                   })}
                 </div>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-12 mb-4">Hobbies for Marriage Biodata for Girl</h2>
+          <p className="text-slate-300 leading-relaxed mb-6">
+            Looking for hobbies for marriage biodata for girl profiles? These specific, non-generic hobbies for girls in
+            biodata stand out immediately because they show real personality instead of repeating &quot;cooking and reading&quot;:
+          </p>
+          <div className="space-y-3 mb-10">
+            {girlHobbies.map((item, idx) => (
+              <div key={item.label} className="rounded-xl border border-slate-700 bg-slate-900/40 p-5">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-brand-500/20 text-brand-400 text-[11px] font-bold flex items-center justify-center">
+                    {idx + 1}
+                  </span>
+                  <span className="text-xs text-slate-500 font-medium tracking-wide">{item.label}</span>
+                </div>
+                <p className="text-slate-200 leading-relaxed text-sm border-l-2 border-brand-500/40 pl-4">{item.text}</p>
+                {item.note && <p className="text-xs text-slate-400 mt-2 pl-4">Why it works: {item.note}</p>}
+              </div>
+            ))}
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-12 mb-4">Hobbies for Marriage Biodata for Boy</h2>
+          <p className="text-slate-300 leading-relaxed mb-6">
+            Choosing hobbies for marriage biodata for boy profiles works best when you replace one-word entries like
+            &quot;cricket, gym&quot; with one honest, grounded detail:
+          </p>
+          <div className="space-y-3 mb-10">
+            {boyHobbies.map((item, idx) => (
+              <div key={item.label} className="rounded-xl border border-slate-700 bg-slate-900/40 p-5">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-brand-500/20 text-brand-400 text-[11px] font-bold flex items-center justify-center">
+                    {idx + 1}
+                  </span>
+                  <span className="text-xs text-slate-500 font-medium tracking-wide">{item.label}</span>
+                </div>
+                <p className="text-slate-200 leading-relaxed text-sm border-l-2 border-brand-500/40 pl-4">{item.text}</p>
               </div>
             ))}
           </div>
