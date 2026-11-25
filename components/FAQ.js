@@ -36,6 +36,18 @@ const faqs = [
         question: "Do I need to include a photo in my biodata?",
         answer: "Yes, if possible. A biodata with a photo receives significantly more responses than one without. Use a recent photo taken in the last 6 months, with a plain or light background, natural lighting, and a clear face. Avoid filters.",
     },
+    {
+        question: "How can I make a biodata for marriage for free?",
+        answer: "Use the free maker on this page. Fill in your personal, family and contact details, choose from 40+ templates, and download your biodata as a PDF, JPEG or Word file. It is completely free — no login, no watermark, and your details never leave your device.",
+    },
+    {
+        question: "Can I make a biodata for marriage on my mobile phone?",
+        answer: "Yes. The maker works in your phone's browser — no app to install. Fill in the same three steps, preview your biodata, download it and share it on WhatsApp right from your phone.",
+    },
+    {
+        question: "Can I make a biodata for marriage without a photo?",
+        answer: "Yes, the photo is optional. Many families prefer to share the photograph separately later. Every template on this page adjusts cleanly when no photo is added.",
+    },
 ];
 
 export function FAQ() {

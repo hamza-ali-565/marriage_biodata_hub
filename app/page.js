@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Link from "next/link";
 import dynamic from 'next/dynamic';
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
@@ -139,6 +140,30 @@ export default function Home() {
             text: "Yes, if possible. A biodata with a photo receives significantly more responses than one without. Use a recent photo taken in the last 6 months, with a plain or light background, natural lighting, and a clear face. Avoid filters.",
           },
         },
+        {
+          "@type": "Question",
+          name: "How can I make a biodata for marriage for free?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Use the free maker on this page. Fill in your personal, family and contact details, choose from 40+ templates, and download your biodata as a PDF, JPEG or Word file. It is completely free — no login, no watermark, and your details never leave your device.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I make a biodata for marriage on my mobile phone?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. The maker works in your phone's browser — no app to install. Fill in the same three steps, preview your biodata, download it and share it on WhatsApp right from your phone.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I make a biodata for marriage without a photo?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, the photo is optional. Many families prefer to share the photograph separately later. Every template on this page adjusts cleanly when no photo is added.",
+          },
+        },
       ],
     },
   ];
@@ -155,6 +180,94 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <HowToCreateBiodata />
+
+        <section
+          aria-labelledby="what-is-biodata-for-marriage-heading"
+          className="relative mt-14 w-full overflow-hidden"
+        >
+          <div className="premium-frame">
+            <div aria-hidden className="premium-frame-glow" />
+            <div className="premium-panel">
+              <div aria-hidden className="premium-panel-overlay" />
+              <div className="relative z-10 mx-auto max-w-3xl px-5 py-12 text-center sm:px-10 sm:py-14">
+                <h2
+                  id="what-is-biodata-for-marriage-heading"
+                  className="text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl"
+                >
+                  What Is a Biodata for Marriage?
+                </h2>
+                <div className="mx-auto mt-5 flex justify-center" aria-hidden>
+                  <div className="h-1 w-16 rounded-full bg-gradient-to-r from-brand-500 to-rose-500" />
+                </div>
+                <p className="mt-6 text-base leading-relaxed text-slate-300 sm:text-lg">
+                  A biodata for marriage is a one-page profile that families exchange when looking for a match. It covers your personal details, family background, education, work and the kind of partner you are looking for. It is also called a marriage biodata, matrimonial biodata, shaadi biodata or rishta biodata — different names for the same document.
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-slate-400 sm:text-base">
+                  New to this? Read our full guide on{" "}
+                  <Link
+                    href="/what-is-marriage-biodata"
+                    className="text-brand-400 underline underline-offset-2 transition-colors hover:text-brand-300"
+                  >
+                    what a marriage biodata is
+                  </Link>{" "}
+                  — what goes in it, and what families look for first.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          aria-labelledby="how-to-make-biodata-for-marriage-heading"
+          className="relative mt-14 w-full overflow-hidden"
+        >
+          <div className="premium-frame">
+            <div aria-hidden className="premium-frame-glow" />
+            <div className="premium-panel">
+              <div aria-hidden className="premium-panel-overlay" />
+              <div className="relative z-10 mx-auto max-w-3xl px-5 py-12 sm:px-10 sm:py-14">
+                <h2
+                  id="how-to-make-biodata-for-marriage-heading"
+                  className="text-center text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl"
+                >
+                  How to Make a Biodata for Marriage
+                </h2>
+                <div className="mx-auto mt-5 flex justify-center" aria-hidden>
+                  <div className="h-1 w-16 rounded-full bg-gradient-to-r from-brand-500 to-rose-500" />
+                </div>
+                <p className="mt-6 text-center text-base leading-relaxed text-slate-300 sm:text-lg">
+                  With the free maker on this page, your biodata is ready in about five minutes:
+                </p>
+                <ol className="mt-6 space-y-4 text-left text-base leading-relaxed text-slate-300">
+                  <li className="premium-card-static flex gap-4 p-5">
+                    <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-brand-500/20 text-sm font-bold text-brand-400">
+                      1
+                    </span>
+                    <span>
+                      Fill in your details — personal information, family details and contact information, in three short steps.
+                    </span>
+                  </li>
+                  <li className="premium-card-static flex gap-4 p-5">
+                    <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-brand-500/20 text-sm font-bold text-brand-400">
+                      2
+                    </span>
+                    <span>
+                      Pick a design — choose from 40+ templates made for Hindu, Muslim, Sikh, Christian, Jain and other Indian communities, and see your biodata update live.
+                    </span>
+                  </li>
+                  <li className="premium-card-static flex gap-4 p-5">
+                    <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-brand-500/20 text-sm font-bold text-brand-400">
+                      3
+                    </span>
+                    <span>
+                      Download and share — save it as a PDF, JPEG or Word file, or send it straight to family on WhatsApp. No login, no watermark.
+                    </span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
         
         <IntersectionObserverWrapper fallback={sectionPlaceholder} rootMargin="400px">
           <TemplateCarousel />

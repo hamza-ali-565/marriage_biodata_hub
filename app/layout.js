@@ -10,9 +10,9 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: "Free Marriage Biodata Maker — Create & Download | MBH",
+  title: "Biodata for Marriage — Free Marriage Biodata Maker Online",
   description:
-    "Create your marriage biodata free in 5 minutes. 40+ templates for Hindu, Muslim, Sikh & all Indian communities. No login. No watermark.",
+    "Biodata for marriage — create yours free in 5 minutes with 40+ templates for Hindu, Muslim, Sikh & all Indian communities. No login, no watermark.",
   authors: [{ name: "Marriage Biodata Hub" }],
   creator: "Marriage Biodata Hub",
   applicationName: "Marriage Biodata Hub",
@@ -25,9 +25,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.marriagebiodatahub.com"),
   openGraph: {
-    title: "Free Marriage Biodata Maker — Create & Download | MBH",
+    title: "Biodata for Marriage — Free Marriage Biodata Maker Online",
     description:
-      "Create your marriage biodata free in 5 minutes. 40+ templates for Hindu, Muslim, Sikh & all Indian communities. No login. No watermark.",
+      "Biodata for marriage — create yours free in 5 minutes with 40+ templates for Hindu, Muslim, Sikh & all Indian communities. No login, no watermark.",
     url: "/",
     siteName: "Marriage Biodata Hub",
     images: [
@@ -43,9 +43,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free Marriage Biodata Maker — Create & Download | MBH",
+    title: "Biodata for Marriage — Free Marriage Biodata Maker Online",
     description:
-      "Create your marriage biodata free in 5 minutes. 40+ templates for Hindu, Muslim, Sikh & all Indian communities. No login. No watermark.",
+      "Biodata for marriage — create yours free in 5 minutes with 40+ templates for Hindu, Muslim, Sikh & all Indian communities. No login, no watermark.",
     images: ["/images/og-image.webp"],
   },
   robots: {
