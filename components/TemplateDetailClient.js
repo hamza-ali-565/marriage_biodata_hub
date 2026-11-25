@@ -17,7 +17,7 @@ import {
 const DEFAULT_BODY_FONT_ID =
   FONT_OPTIONS.find((f) => f.category === "Sans-Serif")?.id || FONT_OPTIONS[0].id;
 
-export function TemplateDetailClient({ templateId }) {
+export function TemplateDetailClient({ templateId, aboutDesign = null }) {
   const initialTemplate = TEMPLATE_DEFINITIONS.find((t) => t.id === templateId) || TEMPLATE_DEFINITIONS[0];
   const [selectedTemplateId, setSelectedTemplateId] = useState(initialTemplate.id);
   const template = TEMPLATE_DEFINITIONS.find((t) => t.id === selectedTemplateId) || TEMPLATE_DEFINITIONS[0];
@@ -334,6 +334,24 @@ export function TemplateDetailClient({ templateId }) {
           </div>
         </section>
       </main>
+      {aboutDesign && (
+        <section
+          aria-labelledby="about-template-design-heading"
+          className="px-4 md:px-10 mt-6 mb-10"
+        >
+          <div className="mx-auto max-w-4xl rounded-3xl border border-white/10 bg-slate-900/60 p-6 sm:p-8 shadow-xl">
+            <h2
+              id="about-template-design-heading"
+              className="text-xl sm:text-2xl font-bold tracking-tight text-white mb-4"
+            >
+              About the {initialTemplate.name} design
+            </h2>
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300">
+              {aboutDesign}
+            </p>
+          </div>
+        </section>
+      )}
       <Footer />
     </>
   );

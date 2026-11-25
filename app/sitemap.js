@@ -275,9 +275,24 @@ function buildStaticEntries() {
   }));
 }
 
+const KEEP_INDEXED_TEMPLATE_SLUGS = new Set([
+  "pavitra-patrika",
+  "lagna-patrika",
+  "noor-nikah",
+  "konkan-kiran",
+  "guru-nanak",
+  "vivah-varta",
+  "sanskaar-saathi",
+  "akhand-jodi",
+  "kanakambar",
+  "prabhaat",
+]);
+
 function buildTemplateEntries() {
   const now = new Date();
-  return TEMPLATE_DEFINITIONS.map((template) => ({
+  return TEMPLATE_DEFINITIONS.filter((template) =>
+    KEEP_INDEXED_TEMPLATE_SLUGS.has(template.slug)
+  ).map((template) => ({
     url: toAbsoluteUrl(`/templates/${template.slug}`),
     lastModified: now,
     changeFrequency: "monthly",
