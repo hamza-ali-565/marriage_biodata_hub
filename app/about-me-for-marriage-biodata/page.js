@@ -245,7 +245,16 @@ export default function AboutMeForMarriageBiodata() {
             family-oriented" tells no one anything. "We have had Sunday lunch together at my parents' house every
             week for six years — even when I was working in another city" tells a family exactly who you are. The 15
             examples below are written for real candidates across different communities and professions. Copy the
-            one that is closest to your situation, change every specific detail to yours, and use it.
+            one that is closest to your situation, change every specific detail to yours, and use it. This page is a
+            collection of ready examples to copy and adapt. If you would rather write your own from scratch, follow
+            our{" "}
+            <Link
+              href="/blog/how-to-write-about-me-in-marriage-biodata"
+              className="text-brand-300 underline hover:text-brand-200 transition-colors"
+            >
+              guide on how to write an About Me for a marriage biodata
+            </Link>
+            .
           </AEOBlock>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white mt-12 mb-4">The one rule that fixes every About Me</h2>
