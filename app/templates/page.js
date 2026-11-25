@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { AnimatedTemplateSections } from "./AnimatedTemplateSections";
@@ -111,6 +112,18 @@ export default function TemplatesPage() {
       <Header />
       <main className="mt-2 flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <AnimatedTemplateSections />
+        <div className="max-w-3xl mx-auto pb-12 text-center">
+          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+            Ready to build yours? Pick any design above and{" "}
+            <Link
+              href="/"
+              className="text-brand-400 underline underline-offset-4 hover:text-brand-300 transition-colors"
+            >
+              make your marriage biodata free
+            </Link>{" "}
+            in minutes — no login, no watermark.
+          </p>
+        </div>
       </main>
       <Footer />
     </>

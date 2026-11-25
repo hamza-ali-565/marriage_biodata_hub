@@ -3,6 +3,21 @@ import { BlogInlineImage } from "./BlogInlineImage";
 import { getBlogImageCandidates } from "../../lib/blog/utils";
 import { SmartLink } from "../SmartLink";
 
+function renderParagraphText(text, link) {
+  if (!link || !link.href || !link.anchor) return text;
+  const idx = text.indexOf(link.anchor);
+  if (idx === -1) return text;
+  return (
+    <>
+      {text.slice(0, idx)}
+      <SmartLink href={link.href} className="blog-inline-link">
+        {link.anchor}
+      </SmartLink>
+      {text.slice(idx + link.anchor.length)}
+    </>
+  );
+}
+
 function SectionBlock({ section, slug, title }) {
   switch (section.type) {
     case "heading": {
@@ -23,7 +38,7 @@ function SectionBlock({ section, slug, title }) {
         />
       );
     case "paragraph":
-      return <p className="blog-paragraph">{section.text}</p>;
+      return <p className="blog-paragraph">{renderParagraphText(section.text, section.link)}</p>;
     case "highlight":
       return (
         <aside className="blog-highlight" role="note">

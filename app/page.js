@@ -264,6 +264,23 @@ export default function Home() {
                     </span>
                   </li>
                 </ol>
+                <p className="mt-6 text-center text-sm leading-relaxed text-slate-400 sm:text-base">
+                  Before you start, review the{" "}
+                  <Link
+                    href="/marriage-biodata-format-2026"
+                    className="text-brand-400 underline underline-offset-2 transition-colors hover:text-brand-300"
+                  >
+                    2026 marriage biodata format
+                  </Link>{" "}
+                  or{" "}
+                  <Link
+                    href="/biodata-samples"
+                    className="text-brand-400 underline underline-offset-2 transition-colors hover:text-brand-300"
+                  >
+                    see filled biodata samples
+                  </Link>{" "}
+                  to see how each section looks in practice.
+                </p>
               </div>
             </div>
           </div>
