@@ -5,16 +5,16 @@ import { ChevronDown } from "lucide-react";
 
 import { SmartLink } from "../../components/SmartLink";
 export const metadata = {
-  title: "Marriage Biodata Format — Complete Guide 2026 | MBH",
+  title: "Marriage Biodata Format by Community — Hindu, Muslim & More",
   description:
-    "Complete marriage biodata format guide — all fields, community differences, PDF vs Word. For Hindu, Muslim, Marathi & all Indian families.",
+    "Every community writes its marriage biodata differently. Compare formats for Hindu, Muslim, Sikh, Christian, Jain, Marathi & more — with fields and free maker.",
   alternates: {
     canonical: "https://www.marriagebiodatahub.com/marriage-biodata-format",
   },
   openGraph: {
-    title: "Marriage Biodata Format — Complete Guide 2026 | MBH",
+    title: "Marriage Biodata Format by Community — Hindu, Muslim & More",
     description:
-      "Complete marriage biodata format guide — all fields, community differences, PDF vs Word. For Hindu, Muslim, Marathi & all Indian families.",
+      "Every community writes its marriage biodata differently. Compare formats for Hindu, Muslim, Sikh, Christian, Jain, Marathi & more — with fields and free maker.",
     url: "/marriage-biodata-format",
     siteName: "Marriage Biodata Hub",
     images: [{ url: "/images/og-image.webp", width: 1200, height: 630 }],
@@ -23,8 +23,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marriage Biodata Format — Complete Guide 2026 | MBH",
-    description: "Complete marriage biodata format guide — all fields, community differences, PDF vs Word. For Hindu, Muslim, Marathi & all Indian families.",
+    title: "Marriage Biodata Format by Community — Hindu, Muslim & More",
+    description:
+      "Every community writes its marriage biodata differently. Compare formats for Hindu, Muslim, Sikh, Christian, Jain, Marathi & more — with fields and free maker.",
     images: ["/images/og-image.webp"],
   },
 };
@@ -176,19 +177,79 @@ export default function MarriageBiodataFormat() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-            Marriage Biodata Format — Complete Guide for All Indian Communities (2026)
+            Marriage Biodata Format for Every Community
           </h1>
 
           <AEOBlock>
-            A marriage biodata format is a structured one-page document divided into four sections: personal details,
-            family background, education and career, and partner preferences. For Hindu families, a fifth section covers
-            horoscope details — Gotra, Rashi, Nakshatra, and Manglik status. Muslim families include Sect and Biradari
-            instead of horoscope fields. The format varies slightly by community but the purpose is the same: giving
-            another family enough information to decide whether to take the conversation forward.
+            There is no single marriage biodata format that fits every Indian family. A Hindu biodata asks for Gotra,
+            Rashi and Manglik status; a Muslim biodata asks for Sect and Biradari; a Marathi biodata carries Kul and
+            Kulswamini. This page is your index to all of them — choose your community below to see its exact format,
+            the fields it includes, and ready-made templates for it. If you would rather read one complete
+            field-by-field guide, see our{" "}
+            <Link
+              href="/marriage-biodata-format-2026"
+              className="text-brand-300 underline hover:text-brand-200 transition-colors"
+            >
+              marriage biodata format 2026 — complete updated guide
+            </Link>
+            .
           </AEOBlock>
 
-          {/* Section 1 */}
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-12 mb-4">What is a marriage biodata format?</h2>
+          {/* Section 1 — Community comparison */}
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-12 mb-4">Marriage biodata format by community — what changes</h2>
+          <p className="text-slate-300 leading-relaxed mb-6">
+            The core format is the same across communities. What changes are three things: the opening invocation
+            (religious greeting), specific community fields, and which sections are most important to that community.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-slate-800 mb-6">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-slate-800 bg-slate-900/60">
+                  <th className="text-left text-slate-300 font-semibold py-3 px-4">Community</th>
+                  <th className="text-left text-slate-300 font-semibold py-3 px-4">Opening</th>
+                  <th className="text-left text-slate-300 font-semibold py-3 px-4">Unique Fields</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-800">
+                {[
+                  ["Hindu", "/hindu-marriage-biodata", "Shree Ganeshaya Namah", "Gotra, Rashi, Nakshatra, Manglik, Kul"],
+                  ["Muslim", "/muslim-biodata-for-marriage", "Bismillah ir-Rahman ir-Rahim", "Sect, Biradari, Religiosity level"],
+                  ["Sikh", "/sikh-biodata-for-marriage", "Ik Onkar Sat Naam", "Gotra/lineage, Gurudwara, Amritdhari status"],
+                  ["Christian", "/christian-biodata-for-marriage", "In the name of God", "Church, Denomination, Diocese, Baptism"],
+                  ["Jain", "/jain-biodata-for-marriage", "Jai Jinendra", "Digambar/Shvetambara, Gotra, dietary practices"],
+                ].map(([comm, href, opening, fields]) => (
+                  <tr key={comm} className="hover:bg-slate-900/40 transition-colors">
+                    <td className="py-3 px-4 text-white font-medium">
+                      <Link href={href} className="text-brand-400 hover:text-brand-300 underline underline-offset-2 transition-colors">
+                        {comm}
+                      </Link>
+                    </td>
+                    <td className="py-3 px-4 text-slate-300">{opening}</td>
+                    <td className="py-3 px-4 text-slate-400">{fields}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-slate-300 leading-relaxed">
+            See full community guides:{" "}
+            <Link href="/hindu-marriage-biodata" className="text-brand-400 hover:text-brand-300 transition-colors">Hindu</Link>
+            {" · "}
+            <Link href="/muslim-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Muslim</Link>
+            {" · "}
+            <Link href="/sikh-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Sikh</Link>
+            {" · "}
+            <Link href="/christian-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Christian</Link>
+            {" · "}
+            <Link href="/buddhist-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Buddhist</Link>
+            {" · "}
+            <Link href="/marathi-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Marathi</Link>
+            {" · "}
+            <Link href="/jain-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Jain marriage biodata format</Link>
+          </p>
+
+          {/* Section 2 */}
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-14 mb-4">What is a marriage biodata format?</h2>
           <p className="text-slate-300 leading-relaxed mb-4">
             The word "biodata" is short for biographical data. In the context of Indian arranged marriages, a marriage
             biodata is a structured one-page document that introduces a bride or groom to the other family. Unlike a job
@@ -325,49 +386,6 @@ export default function MarriageBiodataFormat() {
             address, and city and state.
           </p>
 
-          {/* Section 3 — Community comparison */}
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-14 mb-4">Marriage biodata format by community — what changes</h2>
-          <p className="text-slate-300 leading-relaxed mb-6">
-            The core format is the same across communities. What changes are three things: the opening invocation
-            (religious greeting), specific community fields, and which sections are most important to that community.
-          </p>
-          <div className="overflow-x-auto rounded-2xl border border-slate-800 mb-6">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-slate-800 bg-slate-900/60">
-                  <th className="text-left text-slate-300 font-semibold py-3 px-4">Community</th>
-                  <th className="text-left text-slate-300 font-semibold py-3 px-4">Opening</th>
-                  <th className="text-left text-slate-300 font-semibold py-3 px-4">Unique Fields</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-800">
-                {[
-                  ["Hindu", "Shree Ganeshaya Namah", "Gotra, Rashi, Nakshatra, Manglik, Kul"],
-                  ["Muslim", "Bismillah ir-Rahman ir-Rahim", "Sect, Biradari, Religiosity level"],
-                  ["Sikh", "Ik Onkar Sat Naam", "Gotra/lineage, Gurudwara, Amritdhari status"],
-                  ["Christian", "In the name of God", "Church, Denomination, Diocese, Baptism"],
-                  ["Jain", "Jai Jinendra", "Digambar/Shvetambara, Gotra, dietary practices"],
-                ].map(([comm, opening, fields]) => (
-                  <tr key={comm} className="hover:bg-slate-900/40 transition-colors">
-                    <td className="py-3 px-4 text-white font-medium">{comm}</td>
-                    <td className="py-3 px-4 text-slate-300">{opening}</td>
-                    <td className="py-3 px-4 text-slate-400">{fields}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-slate-300 leading-relaxed">
-            See full community guides:{" "}
-            <Link href="/hindu-marriage-biodata" className="text-brand-400 hover:text-brand-300 transition-colors">Hindu</Link>
-            {" · "}
-            <Link href="/muslim-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Muslim</Link>
-            {" · "}
-            <Link href="/marathi-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Marathi</Link>
-            {" · "}
-            <Link href="/jain-biodata-for-marriage" className="text-brand-400 hover:text-brand-300 transition-colors">Jain marriage biodata format</Link>
-          </p>
-
           {/* Section 4 — PDF vs Word */}
           <h2 className="text-2xl sm:text-3xl font-bold text-white mt-14 mb-4">Marriage biodata format: PDF vs Word vs Image</h2>
           <p className="text-slate-300 leading-relaxed mb-4">
@@ -463,8 +481,18 @@ export default function MarriageBiodataFormat() {
 
           <CTABlock />
 
-          {/* Section 7 — 2026 changes */}
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-14 mb-4">Marriage biodata format 2026 — what's changed this year</h2>
+          {/* Section 7 — Recent changes */}
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-14 mb-4">What has changed in biodata formats in recent years</h2>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            For the complete year-by-year breakdown, read the{" "}
+            <Link
+              href="/marriage-biodata-format-2026"
+              className="text-brand-400 underline hover:text-brand-300 transition-colors"
+            >
+              marriage biodata format 2026 guide
+            </Link>
+            . The short version:
+          </p>
           <p className="text-slate-300 leading-relaxed mb-4">
             A few things have genuinely shifted in how Indian families approach the biodata format in 2025–26, based on
             Jeevansathi's report analysing 30,000 active users:
