@@ -5,16 +5,16 @@ import { ChevronDown } from "lucide-react";
 import { SmartLink } from "../../components/SmartLink";
 
 export const metadata = {
-  title: "Marriage Biodata FAQ — 50 Questions Answered",
+  title: "Marriage Biodata FAQ — 52 Questions Answered",
   description:
-    "50 real questions about marriage biodatas answered — using the tool, special situations, privacy, and matrimonial process etiquette. Everything in one place.",
+    "52 real questions about marriage biodatas answered — using the tool, special situations, privacy, and matrimonial process etiquette. Everything in one place.",
   alternates: {
     canonical: "https://www.marriagebiodatahub.com/marriage-biodata-faq",
   },
   openGraph: {
-    title: "Marriage Biodata FAQ — 50 Questions Answered",
+    title: "Marriage Biodata FAQ — 52 Questions Answered",
     description:
-      "50 real questions about marriage biodatas answered — using the tool, special situations, privacy, and matrimonial process etiquette.",
+      "52 real questions about marriage biodatas answered — using the tool, special situations, privacy, and matrimonial process etiquette.",
     url: "/marriage-biodata-faq",
     siteName: "Marriage Biodata Hub",
     images: [{ url: "/images/og-image.webp", width: 1200, height: 630 }],
@@ -23,9 +23,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marriage Biodata FAQ — 50 Questions Answered",
+    title: "Marriage Biodata FAQ — 52 Questions Answered",
     description:
-      "50 real questions about marriage biodatas — tool use, special situations, privacy, and matrimonial etiquette.",
+      "52 real questions about marriage biodatas — tool use, special situations, privacy, and matrimonial etiquette.",
     images: ["/images/og-image.webp"],
   },
 };
@@ -45,6 +45,7 @@ const categories = [
       { q: "Can two family members use the tool to make separate biodatas?", a: "Yes. Since no account is required, each person simply opens the tool separately (or the same browser at different times) and fills in their own details independently. There is no account-based limit — a family creating biodatas for two siblings can do so one after another with no restriction." },
       { q: "Can I save my progress and come back to finish my biodata later?", a: "Yes. Your details are stored in your browser's local storage as you fill in the form, so returning to the site on the same device and browser will restore your progress. This works as long as you don't clear your browser data in the meantime." },
       { q: "Can I generate a QR code for my biodata instead of sharing a file?", a: "If a QR code feature is not yet available, the shareable link feature serves a similar purpose — it generates a private link to your biodata that opens as a clean web page on any device. Check the download screen for the current sharing options, as tool features are added over time." },
+      { q: "Where can I make a biodata for marriage?", a: "You have four common options. A local printing or DTP shop will type and print one for you, but you hand your personal details and photo to the shop and pay for every copy. In Word or Canva you can design one yourself, though you must arrange the layout and remember every field on your own. Matrimonial websites have basic profile builders, but those stay tied to that platform. Or you can use a free online biodata maker like this site — the fields for your community are ready, the design is done, and you download a finished PDF in minutes without an account. Most families today use an online maker and share the PDF on WhatsApp." },
     ],
   },
   {
@@ -61,6 +62,7 @@ const categories = [
       { q: "How often should I update my biodata while actively searching?", a: "Update it whenever a material fact changes — a job change, a promotion, a house move, or a significant life update. Beyond factual updates, if your biodata has been circulating for six months to a year without generating meaningful responses, it's worth revisiting the photo and About Me section specifically, since these are the two most common reasons a biodata underperforms.", link: { href: "/blog/marriage-biodata-mistakes-that-get-you-rejected", label: "Common biodata mistakes" } },
       { q: "Should I stop sharing my biodata once I get engaged?", a: "Yes, and promptly — continuing to circulate your biodata after becoming engaged, even informally, can create confusion or embarrassment if it reaches a family that then makes an approach. If your biodata is on any matrimonial platform, deactivate or delete the profile once you're seriously committed to one match." },
       { q: "Can I use the same biodata PDF across multiple matrimonial platforms?", a: "Yes. Most matrimonial platforms (Shaadi.com, BharatMatrimony, Jeevansathi) accept a PDF upload alongside their own profile fields, and using the same well-designed biodata across all platforms and direct WhatsApp sharing keeps your presentation consistent everywhere rather than maintaining several different versions." },
+      { q: "Should I mention my salary in a marriage biodata?", a: "Most families expect some indication of income, because it answers a practical question early. You can write the exact annual figure, which is common for salaried jobs (for example, 12 LPA), or a range if your income varies, as it does in business, freelance, or commission-based work. What matters is honesty — an inflated figure always surfaces later and damages trust. If you prefer not to print a number, write your job title, employer type, and city clearly; many families then simply ask about income in the first conversation. There is no single rule — follow your family's comfort.", link: { href: "/blog/should-i-include-salary-in-marriage-biodata", label: "Salary in a marriage biodata — the full guide" } },
     ],
   },
   {
@@ -125,9 +127,9 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Marriage Biodata FAQ — 50 Questions Answered",
+    headline: "Marriage Biodata FAQ — 52 Questions Answered",
     description:
-      "The complete marriage biodata FAQ hub — 50 real questions covering how to use the biodata tool, special life situations, privacy and safety, and matrimonial process etiquette that no single guide on this site covers in full.",
+      "The complete marriage biodata FAQ hub — 52 real questions covering how to use the biodata tool, special life situations, privacy and safety, and matrimonial process etiquette that no single guide on this site covers in full.",
     datePublished: "2026-08-20",
     dateModified: "2026-08-20",
     author: { "@type": "Organization", name: "Marriage Biodata Hub" },
@@ -219,15 +221,15 @@ export default function MarriageBiodataFAQ() {
           <div className="mb-3 flex items-center gap-3 text-xs text-slate-500">
             <span>Last updated: August 2026</span>
             <span>·</span>
-            <span>50 questions answered</span>
+            <span>52 questions answered</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-            Marriage Biodata FAQ — 50 Questions Answered
+            Marriage Biodata FAQ — 52 Questions Answered
           </h1>
 
           <AEOBlock>
-            This page answers 50 real questions about marriage biodatas that don't belong to any single guide —
+            This page answers 52 real questions about marriage biodatas that don't belong to any single guide —
             practical questions about using the tool, special life situations, privacy and safety, and matrimonial
             process etiquette. For deep-dive guides on specific topics — community fields, horoscope details, writing
             your About Me, sharing on WhatsApp — see the linked guides throughout, or browse our{" "}

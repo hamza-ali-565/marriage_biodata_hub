@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "Can I download the template in Word format, or only PDF?",
-    a: "Both PDF and JPEG image format are available for download. PDF is recommended for WhatsApp sharing, printing, and uploading to matrimonial sites — it preserves the design exactly on every device. JPEG is useful if a platform or recipient specifically wants an image file. Word (.docx) format is not currently available, but all template fields are editable before download.",
+    a: "Yes — every template can be downloaded as a Word (.docx) file as well as PDF and JPEG. On the download screen, choose 'Download Word (.docx)' and you will get an editable Word file carrying your details, which you can open in Microsoft Word or Google Docs and adjust before printing or sharing. PDF is still the best choice for WhatsApp sharing, because it looks identical on every phone. Word is the better choice when you want to edit the text after downloading.",
   },
   {
     q: "Do you have templates for Christian, Jain, Sikh, or NRI families?",
