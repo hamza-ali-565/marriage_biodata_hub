@@ -81,6 +81,13 @@ export default function ContactUs() {
             <div className="absolute bottom-0 right-0 -mb-20 -mr-20 w-80 h-80 rounded-full bg-rose-500/10 blur-[100px] pointer-events-none" />
             
             <h2 className="text-xl font-semibold text-white mb-6">Send us a message</h2>
+
+            <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-4 mb-6 relative z-10">
+              <h3 className="text-sm font-semibold text-white mb-1.5">Before You Write</h3>
+              <p className="text-xs sm:text-sm leading-relaxed text-slate-300">
+                To help us solve your problem in one reply, please mention: the template you were using, whether you were on a phone or a computer, and the step where things went wrong (filling the form, choosing a design, or downloading). If a download failed, tell us which format you chose — PDF, JPEG, or Word. Please do not send your personal biodata details or photographs by email; the maker works entirely on your own device, so we never need them to help you.
+              </p>
+            </div>
             
             <form className="space-y-5 relative z-10">
               <div className="space-y-1.5">
