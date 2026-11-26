@@ -70,7 +70,7 @@ const faqSchema = {
     {
       "@type": "Question",
       "name": "Can I download the biodata template in Word format?",
-      "acceptedAnswer": { "@type": "Answer", "text": "PDF and JPEG image formats are available for download. PDF is recommended for WhatsApp sharing, printing, and uploading to matrimonial sites. Word format is not currently available, but all fields are editable before download." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — every template can be downloaded as a Word (.docx) file as well as PDF and JPEG. On the download screen, choose 'Download Word (.docx)' and you will get an editable Word file carrying your details, which you can open in Microsoft Word or Google Docs and adjust before printing or sharing. PDF is still the best choice for WhatsApp sharing, because it looks identical on every phone. Word is the better choice when you want to edit the text after downloading." }
     },
     {
       "@type": "Question",
